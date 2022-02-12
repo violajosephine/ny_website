@@ -1,0 +1,15 @@
+/* --------------ROOT------------- */
+:root {
+  --babyblue: #e8e9ff;
+  --purple: #910070;
+  --babypink: #ffbefc;
+  --lime: #e5ff00;
+  --magenta: #ff43be;
+
+  --bodoni: ltc-bodoni-175, serif;
+  --marker: chantal, sans-serif;
+}
+
+.navbar {
+  background-color: var(--magenta);
+}

@@ -1,0 +1,156 @@
+/* --------------ROOT------------- */
+:root {
+  --babyblue: #e8e9ff;
+  --purple: #910070;
+  --babypink: #ffbefc;
+  --lime: #e5ff00;
+  --magenta: #ff43be;
+
+  --bodoni: ltc-bodoni-175, serif;
+  --marker: chantal, sans-serif;
+}
+
+.navbar {
+  background-color: var(--magenta);
+}
+
+/* --------------BLOG-------------- */
+
+#content {
+  /* margin-left: 50px;
+    margin-right: 50px; */
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#posts {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fill, minmax(500px, 800px)); */
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#header {
+  text-align: center;
+  font-family: var(--marker);
+}
+
+.hidden {
+  display: none;
+}
+
+.thought {
+  background-image: url(../images/thought_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 464px;
+}
+
+.little_thought {
+  font-size: 1.5rem !important;
+}
+
+.medium_thought {
+  font-size: 1.2rem !important;
+}
+
+.big_thought {
+  font-size: 1rem !important;
+}
+
+.thought_text {
+  padding: 10px;
+  padding-top: 5px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.date_thought {
+  align-self: flex-end;
+  font-size: 1rem;
+}
+
+.quote {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 464px;
+  display: flex;
+  flex-direction: column;
+}
+.quote_text {
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.date_quote {
+  align-self: flex-end;
+  font-size: 1rem;
+}
+
+.post {
+  padding: 30px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.other_post_more {
+  color: var(--magenta);
+  margin: auto;
+  text-align: center;
+  border: solid 1px var(--magenta);
+  width: 100px;
+}
+
+.posts_title {
+  text-align: center;
+}
+
+.post_date {
+  opacity: 0.5;
+  margin: 5px;
+}
+.post_image {
+  max-width: 100%;
+}
+.post_textbox {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  color: var(--magenta);
+}
+
+.post_text {
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-y: visible;
+  max-width: 370px;
+}
+
+.post_text p {
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-y: visible;
+  margin: 0;
+}
+
+.overflow {
+  overflow: visible;
+}

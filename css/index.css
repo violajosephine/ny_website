@@ -1,0 +1,104 @@
+/* -----------HELLO----------- */
+
+#hello {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+#hello img {
+  max-width: 400px;
+  margin-right: 30px;
+}
+
+.typing-demo {
+  width: 34.5ch;
+  animation: typing 2s steps(31), blink 0.4s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: var(--blue);
+  align-self: center;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* ------------------ROSES--------------- */
+body {
+  margin: 30px;
+}
+
+#roses {
+  width: 90%;
+  height: 120%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+}
+
+.falling_rose {
+  background-image: url(../assets/rose.png);
+  height: 150px;
+  width: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  animation: rose 30s linear;
+  animation-iteration-count: infinite;
+  z-index: 10;
+}
+.rose1 {
+  left: 10%;
+  top: -12vw;
+}
+
+.rose2 {
+  left: 30%;
+  top: -82vw;
+  transform: rotate(30deg);
+}
+
+.rose3 {
+  left: 50%;
+  top: -112vw;
+  transform: rotate(100deg);
+}
+
+.rose4 {
+  left: 70%;
+  top: -132vw;
+  transform: rotate(50deg);
+}
+
+.rose5 {
+  left: 90%;
+  top: -52vw;
+  transform: rotate(130deg);
+}
+
+@keyframes rose {
+  0% {
+    transform: translateY(-5vw) rotate(inherit);
+  }
+  100% {
+    transform: translateY(250vw) rotate(360deg);
+  }
+}
+
+img {
+  max-width: 100%;
+}
