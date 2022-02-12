@@ -171,8 +171,6 @@ iframe[src=""] {
 #about_box_title {
   text-align: center;
   font-family: var(--bodoni);
-  font-weight: 400;
-  font-style: normal;
   color: var(--purple);
 }
 
@@ -182,7 +180,7 @@ iframe[src=""] {
   align-items: center;
   background-color: white;
   box-shadow: 2px 2px 10px 0.1px var(--purple);
-  padding: 10px;
+  padding: 20px;
   align-self: start;
   color: var(--purple);
 }
