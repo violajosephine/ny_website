@@ -1,15 +1,16 @@
 /* -----------HELLO----------- */
 
 #hello {
-  max-width: 1000px;
+  max-width: 1100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
+  align-items: center;
 }
 
 #hello img {
-  max-width: 400px;
+  max-width: 500px;
   margin-right: 30px;
 }
 
@@ -101,4 +102,14 @@ body {
 
 img {
   max-width: 100%;
+}
+
+@media screen and (max-width: 470px) {
+  .typing-demo {
+    font-size: 1rem !important;
+  }
+  #hello img {
+    margin: 5px;
+    max-width: 100%;
+  }
 }

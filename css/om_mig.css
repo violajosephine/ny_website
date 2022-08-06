@@ -7,7 +7,7 @@
   --magenta: #ff43be;
 
   --bodoni: ltc-bodoni-175, serif;
-  --marker: chantal, sans-serif;
+  --marker: chantal, "arial black", sans-serif;
 }
 
 .navbar {

@@ -33,9 +33,8 @@ function showPost(post) {
   document.querySelector("#alternative_headline").textContent =
     post.blogposts[id].alternate_headline;
   document.querySelector("#author").textContent =
-    "by " + post.blogposts[id].author;
-  document.querySelector("#date").textContent =
-    post.blogposts[id].date_published;
+    "By " + post.blogposts[id].author;
+  document.querySelector("#date").textContent = post.blogposts[id].date;
   document.querySelector("#intro").innerHTML = post.blogposts[id].intro;
   document.querySelector("#blog_image").src = post.blogposts[id].image;
   document.querySelector("#image_caption").innerHTML =
@@ -46,21 +45,20 @@ function showPost(post) {
     post.blogposts[id].quote_author;
   document.querySelector("#body2").innerHTML = post.blogposts[id].body2;
   document.querySelector("#video").src = post.blogposts[id].youtube;
+
   var video = document.getElementById("video");
+
+  if (video.src == "undefined" || '""') {
+    video.style.display = "none";
+  }
+  document.querySelector("#audio").src = post.blogposts[id].extra;
+  console.log(post.blogposts[id].extra);
+  var audio = document.getElementById("audio");
+  if (audio.src == "undefined" || '""') {
+    console.log(audio.src);
+    audio.style.display = "none";
+  }
 }
-// if (video.src == "undefined" || '""') {
-//   video.style.display = "none";
-// }
-// document.querySelector("#audio").src =
-//   "https://kea21spring-0a0d.restdb.io/media/" + post.extra;
-// console.log("https://kea21spring-0a0d.restdb.io/media/" + post.extra);
-// var audio = document.getElementById("audio");
-// if (
-//   audio.src == "https://kea21spring-0a0d.restdb.io/media/undefined" ||
-//   "https://kea21spring-0a0d.restdb.io/media/"
-// ) {
-//   audio.style.display = "none";
-// }
 // document.querySelector("main").classList.remove("hidden");
 // const other_url =
 //   "https://kea21spring-0a0d.restdb.io/rest/test?max=" +
@@ -123,8 +121,7 @@ function showPost(post) {
 //       other.style.display = "none";
 //       copy.querySelector(".other_post_more").style.display = "none";
 //     }
-//     copy.querySelector(".other_post_text").innerHTML =
-//       otherpost.intro + "...";
+//     copy.querySelector(".other_post_text").innerHTML = otherpost.intro + "...";
 //     //grab parent
 //     const parent = document.querySelector("#other_posts");
 //     //append child

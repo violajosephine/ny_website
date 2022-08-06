@@ -7,7 +7,7 @@
   --magenta: #ff43be;
 
   --bodoni: ltc-bodoni-175, serif;
-  --marker: chantal, sans-serif;
+  --marker: chantal, "arial black", sans-serif;
 }
 
 /* --------------BODY-------------- */
@@ -149,9 +149,8 @@ header h1 {
 }
 
 .navbar-nav {
-  margin-left: 50px;
   margin: auto;
-  width: 800px;
+  width: 1000px;
   align-items: center;
   justify-content: space-around;
 }
@@ -162,7 +161,8 @@ header h1 {
 
 .nav-link {
   padding: 10px !important;
-  font-size: 1.5rem;
+  padding-top: 20px !important;
+  font-size: 1.2rem;
 }
 
 #navbarNavAltMarkup {
@@ -204,5 +204,12 @@ header h1 {
 
   #first_container {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .logo1,
+  .logo2 {
+    font-size: 2.4rem;
   }
 }
